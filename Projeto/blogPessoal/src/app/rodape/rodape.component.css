@@ -26,3 +26,11 @@ ul.social-network li{
 .fa-github:hover{
     color: black;
 }
+
+.bg{
+    background-color: #000b2d;
+} 
+
+.bg-footer{
+    background-color: #01011b;
+}
