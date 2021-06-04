@@ -21,6 +21,8 @@ export class CadastrarComponent implements OnInit {
 
   ngOnInit() { //quando a página iniciar, faça isso:
     window.scroll(0,0)
+    this.mostrarSenha()
+    this.mostrarConfirmSenha()
   }
 
   confirmSenha(event: any){
@@ -43,6 +45,34 @@ export class CadastrarComponent implements OnInit {
         alert('Usuário cadastrado com sucesso!')
       })
     }
+  }
+
+  mostrarSenha() {
+    let btn = document.querySelector('.fa-eye')
+
+    btn?.addEventListener('click', () => {
+      let inputSenha = document.querySelector('#senha')
+
+      if (inputSenha?.getAttribute('type') == 'password') {
+        inputSenha?.setAttribute('type', 'text')
+      } else {
+        inputSenha?.setAttribute('type', 'password')
+      }
+    })
+  }
+
+  mostrarConfirmSenha() {
+    let btn = document.querySelector('.fa-eye')
+
+    btn?.addEventListener('click', () => {
+      let inputSenha = document.querySelector('#confirmSenha')
+
+      if (inputSenha?.getAttribute('type') == 'password') {
+        inputSenha?.setAttribute('type', 'text')
+      } else {
+        inputSenha?.setAttribute('type', 'password')
+      }
+    })
   }
 
 }

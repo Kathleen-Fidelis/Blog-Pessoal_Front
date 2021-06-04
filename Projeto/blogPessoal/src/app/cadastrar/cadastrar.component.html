@@ -7,7 +7,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-10">
 
-                    <h1 class="text-center">Cadastro</h1>
+                    <h1 class="text-center font">Cadastro</h1>
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
@@ -24,8 +24,9 @@
                         <input [(ngModel)]='user.foto' class="form-control" type="text" name="foto" id="foto" placeholder="Link da sua foto">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group label-float">
                         <label for="senha">Senha</label>
+                        <i class="fa fa-eye" aria-hidden="true"></i>
                         <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
                     </div>
 

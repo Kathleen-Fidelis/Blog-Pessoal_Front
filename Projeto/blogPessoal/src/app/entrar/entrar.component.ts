@@ -20,6 +20,7 @@ export class EntrarComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0,0)
+    this.mostrarSenha()
   }
 
   entrar(){
@@ -35,6 +36,20 @@ export class EntrarComponent implements OnInit {
     }, erro =>{
       if (erro.status == 500) {
         alert('Usuário ou senha estão incorretos!')
+      }
+    })
+  }
+
+  mostrarSenha() {
+    let btn = document.querySelector('.fa-eye')
+
+    btn?.addEventListener('click', () => {
+      let inputSenha = document.querySelector('#senha')
+
+      if (inputSenha?.getAttribute('type') == 'password') {
+        inputSenha?.setAttribute('type', 'text')
+      } else {
+        inputSenha?.setAttribute('type', 'password')
       }
     })
   }

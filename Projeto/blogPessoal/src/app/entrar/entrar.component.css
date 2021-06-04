@@ -5,3 +5,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.fa-eye{
+  position:absolute ;
+  top: 55px;
+  right: 10px;
+  cursor: pointer;
+  color:black ;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
