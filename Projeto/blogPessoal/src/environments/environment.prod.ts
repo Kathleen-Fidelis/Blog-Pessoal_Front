@@ -5,7 +5,7 @@ export const environment = {
   id: 0,
   foto: '',
   tipo: '',
-  server: 'http://localhost:8080'
+  server: 'https://blogpessoalkathleen.herokuapp.com'
 };
 
 //https://blogpessoalkathleen.herokuapp.com
